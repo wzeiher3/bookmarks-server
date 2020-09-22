@@ -1,8 +1,9 @@
 const bookmarks = [{
     id: "1",
-    title: 'First Bookmark',
-    content: 'This is a bookmark', 
-    rating: 5
+    title: 'Youtube',
+    content: 'Video Site', 
+    rating: 5, 
+    url: 'https://www.youtube.com/'
 }]
   
 
