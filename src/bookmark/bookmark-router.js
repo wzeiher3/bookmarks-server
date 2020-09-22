@@ -15,7 +15,7 @@ bookmarksRouter
   })
   .post(bodyParser, (req, res) => {
     // move implementation logic into here
-    const { title, content } = req.body;
+    const { title, content, rating } = req.body;
 
   if (!title) {
     logger.error(`Title is required`);
@@ -35,7 +35,8 @@ bookmarksRouter
   const bookmark = {
     id,
     title,
-    content
+    content,
+    rating
   };
   
   bookmarks.push(bookmark);
